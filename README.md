@@ -67,19 +67,23 @@ git pull --all
 ### Comandos empregados
 
 ```bash 
-git config --global color.ui auto```
+git config --global color.ui auto
+```
 > Sirve para modificar o color da interfaz de usuario.
 
 ```bash 
-git diff```
+git diff
+```
 > Sirve para mostrar as modificacions entre distintos commits.
 
 ``` bash 
-git show```
+git show
+```
 > Sirve para mostrar visualmente as diferencias de contido entre os commits.
 
 ``` bash 
-git commit --amend -m"```
+git commit --amend -m"
+```
 > Modifica a mensaxe de descripción do commit.
 
 ### Pasos a seguir na práctica.
