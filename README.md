@@ -98,3 +98,47 @@ git commit --amend -m"
 9. Facemos un commit dos cambios.
 10. Cambiamos a mensaxe do último commit.
 11. Volvemos mostrar os cambios no repositorio.
+
+## Practica 3: manexo de historial de cambios de repositorios git
+
+### Comandos empregados
+
+```bash 
+git clone
+```
+> Sirve para clonar un repositorio.
+
+```bash 
+git reset --hard codigo
+```
+> Sirve para devolver o repositorio ó estado dun commit determinado.
+
+``` bash 
+git log
+```
+> Sirve para ver todos os cambios feitos nos commits do repositorio.
+
+``` bash 
+git diff HEAD~2..HEAD
+```
+> Sirve para mostrar as diferencias e modificacions entre dous commits.
+
+``` bash 
+git annotate "archivo"
+```
+> Sirve para mostrar as lineas de comandos e o autor que as modificou.
+
+
+### Pasos a seguir na práctica.
+
+1. Clonamos o repositorio Libro do enlace https://github.com/asalber/libro-git e configurámolo.
+2. Creamos a carpeta capitulos e dentro o ficheiro capitulo1.txt co contido indicado.
+3. Engadimolo ao repositorio e facemos un commit.
+4. Mostramos os cambios.
+5. Creamos o ficheiro capitulo2.txt co contido indicado, engadimolo ao repositorio e facemos un commit
+6. Mostramos as diferencias entre a versión actual e dúas versións antes.
+7. Creamos o ficheiro capitulo3.txt co contido indicado, engadímolo ao repositorio e facemos un commit
+8. Mostramos as diferencias entre a primeira e a última versión do repositorio.
+9. Engadimos ao final do ficheiro indice.txt a liña "Capítulo 5: Conceptos avanzados"
+10. Engadímolo ao repositorio e facemos un commit.
+11. Mostramos quen fixo os cambios no ficheiro indice.txt
