@@ -62,7 +62,7 @@ git pull --all
 9. Creamos o arquivo README.md
 10. Baixamos os arquivos do repositorio en liña ao local co comando `git pull --all`
 
-## Practica 2: Creación e conexión de repositorios git
+## Práctica 2: Creación e conexión de repositorios git
 
 ### Comandos empregados
 
@@ -99,7 +99,7 @@ git commit --amend -m"
 10. Cambiamos a mensaxe do último commit.
 11. Volvemos mostrar os cambios no repositorio.
 
-## Practica 3: Manexo de historial de cambios de repositorios git
+## Práctica 3: Manexo de historial de cambios de repositorios git
 
 ### Comandos empregados
 
@@ -143,7 +143,7 @@ git annotate "archivo"
 10. Engadímolo ao repositorio e facemos un commit.
 11. Mostramos quen fixo os cambios no ficheiro indice.txt
 
-## Practica 4: Desfacer cambios
+## Práctica 4: Desfacer cambios
 
 ### Comandos empregados
 
@@ -179,8 +179,6 @@ git restore --stage
 
 ### Pasos a seguir na práctica.
 
-### Pasos a seguir na práctica.
-
 1. Eliminamos a ultima linea de indice.txt e executamos o comando git status para comprobar o estado do repo.
 2. Executamos o comando git restore para desfacer os cambios que acabamos de realizar. 
 3. Volvemos a eliminar a ultima linea de indice.txt e executamos o comando "git add ." para añdilo o stage.
@@ -195,3 +193,48 @@ git restore --stage
 12. Facemos un git reset --soft para desfacer o commit pero non o git add . nin os cambios e revisamos o estado do repo vendo que o git add ainda se conserva.
 13. Facemos de novo git commit -m "borrado accidental" e un git log para ver o estado do repo.
 14. Volvemos a ultima version anterior do repo utilizando o comando git reset --hard e vemos que o repo volveu o estado anterior.
+
+## Práctica 5: Xestión de ramas
+
+### Comandos empregados
+
+``` bash 
+git branch nome
+```
+> Crea unha nova rama co nome especificado.
+
+``` bash 
+git branch -av
+```
+> Mostra as ramas do repositorio.
+
+``` bash 
+git checkout nome
+```
+> Cambia á rama especificada.
+
+``` bash 
+git merge nome
+```
+> Fusiona a rama actual coa especificada no comando.
+
+``` bash 
+git branch -d nome
+```
+> Elimina a rama especificada no comando.
+
+### Pasos a seguir na práctica.
+
+1. Creamos unha nova rama chamada bibliografia e mostramos as ramas do repositorio.
+2. Creamos o arquivo capitulo4.txt, engadimolo ao repositorio, facemos un commit e mostramos a historia do repositorio.
+3. Cambiamos a rama a bibliografía.
+4. Creamos o arquivo bibliografia.txt, engadimolo ao repositorio, facemos un commit e mostramos a historia do repositorio.
+5. Fusionamos a rama bibliografía coa rama master.
+6. Mostramos a historia do repositorio, eliminamos a rama bibliografia e volvemos a mostrar a historia.
+7. Creamos de novo a rama bibliografia, cambiamos a ela e creamos o arquivo bibliografia.txt
+8. Engadimolo ao repositorio e facemos un commit.
+9. Cambiamos á rama master e modificamos o arquivo bibliografia.txt
+10. Engadimolo ao repositorio e facemos un commit.
+11. Fusionamos a rama bibliografia coa rama master.
+12. Engadimolo ao repositorio e facemos un commit.
+13. Mostramos a historia do repositorio.
