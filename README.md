@@ -238,3 +238,36 @@ git branch -d nome
 11. Fusionamos a rama bibliografia coa rama master.
 12. Engadimolo ao repositorio e facemos un commit.
 13. Mostramos a historia do repositorio.
+
+## Práctica 6: Repositorios remotos
+
+### Comandos empregados
+
+``` bash
+git remote add github https://github.com/fersp95/libro-git.git
+```
+> Engade un repositorio en liña ao repositorio local
+
+``` bash
+git remote -v
+```
+> Mostra os repositorios remotos configurados
+
+``` bash
+git push github master
+```
+> Engade os cambios do repositorio local ao repositorio remoto de GitHub
+
+
+### Pasos a seguir na práctica.
+
+1. Creamos en Github un repositorio chamado libro-git.
+2. Egnadímolo ao repositorio local do libro e mostramos os repositorios configurados.
+3. Engadimos os cambios do repositorio local ao repositorio remoto de Github e comprobamos o historial de versións.
+4. Despois de ser engadidos como colaboradores ao repositorio doutro usuario, clonámolo e engadimos o ficheiro autores.txt co nome e correo.
+5. Engadimos os arquivos e facemos un commit, e despois subimos os cambios ao repositorio remoto.
+6. Creamos un fork do repositorio libro en Github.
+7. Clonamos o repositorio creado na nosa conta e creamos unha rama autoria.
+8. Activamos a rama e engadimos o nome de usuario e o correo ao ficheiro autores.txt
+9. Engadimos os cambios á zona de intercambio temporal, facemos un commit e subimos os cambios da rama autoria ao repositorio remoto.
+10. En Github facemos un Pull Request dos cambios da rama autoria dandolle ao botón Compare & Pull Request, e completamos a solicitude clicando en Create Pull Request
